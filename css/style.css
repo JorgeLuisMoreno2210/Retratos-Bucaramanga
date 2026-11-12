@@ -1,0 +1,498 @@
+:root {
+    --Claro-gris-muy-suave: #F5F5F5;
+    --Intermedio-gris-medio: #CCCCCC;
+    --Oscuro-gris-carbón: #4F4F4F;
+    --Blanco-puro: #FFFFFF;
+    --Blanco-cálido: #FAFAFA;
+    --Blanco-frío: #F0F0F0;
+    --Negro-puro: #000000;
+    --Negro-suave: #1A1A1A;
+    --Negro-grisáceo: #2C2C2C;
+    --text-color: #333;
+    --font-size: 16px;
+    --spacing: 1.5rem;
+    --background-img: url(../img/background-1.jpg);
+}
+
+
+* {
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    box-sizing: border-box; /* Asegura que el ancho y alto incluyen el relleno y los bordes */
+    font-family: 'Arial', sans-serif; /* Define la fuente global como Arial */
+    scroll-behavior: smooth; /* Aplica un desplazamiento suave */
+}
+
+body {
+    font-size: var(--font-size); /* Establece el tamaño de la fuente del cuerpo usando la variable */
+    line-height: 1.6; /* Establece la altura de línea para mejorar la legibilidad */
+    color: var(--Negro-suave); /* Define el color de texto principal */
+    background-color: var(--Blanco-frío); /* Define el color de fondo del cuerpo */
+}
+
+.top-bar {
+    background-color: #f7f7f7; /* Establece el color de fondo de la barra superior */
+    color: var(--Negro-suave); /* Establece el color del texto en la barra superior */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 5px 0; /* Define el relleno de arriba y abajo */
+    font-size: 14px; /* Define el tamaño de la fuente */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+}
+
+.top-bar img {
+    width: 20px; /* Define el ancho de la imagen en la barra superior */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+}
+
+header nav {
+    display: flex; /* Utiliza Flexbox para organizar los elementos dentro del nav */
+    justify-content: left; /* Alinea los elementos al lado izquierdo */
+    background-color: var(--Blanco-puro); /* Establece el color de fondo del nav */
+    overflow: hidden; /* Oculta cualquier contenido que sobrepase el área del nav */
+    box-shadow: var(--Negro-grisáceo) 1rem; /* Aplica una sombra con el color gris oscuro */
+    padding: 1rem; /* Aplica un relleno alrededor de los elementos del nav */
+}
+
+/* Estilo del contenedor de navegación */
+.nav {
+    display: flex; /* Utiliza Flexbox para organizar los elementos dentro de .nav */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+/* Ajusta la lista de navegación para estar al lado del logo */
+.nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Utiliza Flexbox para organizar los elementos en fila */
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+    gap: 15px; /* Define el espacio entre los elementos del menú */
+}
+
+.nav a {
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    color: var(--Negro-suave); /* Define el color de los enlaces */
+    padding: 10px 15px; /* Aplica relleno alrededor de los enlaces */
+    font-size: 15px; /* Define el tamaño de la fuente */
+    border-radius: 5px; /* Aplica bordes redondeados a los enlaces */
+    transition: background-color 0.3s, color 0.3s; /* Aplica una transición suave para el cambio de color */
+}
+
+.nav a:hover {
+    background-color: var(--Oscuro-gris-carbón); /* Cambia el color de fondo al pasar el ratón */
+    color: var(--Blanco-frío); /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Logo en el menú */
+.menu-logo {
+    width: 180px; /* Define el ancho del logo */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    object-fit: cover; /* Asegura que el logo cubra el contenedor sin distorsionarse */
+    margin-right: 15px; /* Agrega espacio entre el logo y los elementos del menú */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa por encima */
+}
+
+/* Contenedor del pequeño logo */
+.small-logo-container {
+    display: flex; /* Utiliza Flexbox para organizar los elementos dentro del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+    position: absolute; /* Posiciona el contenedor de manera absoluta */
+    top: 45px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+}
+
+/* Estilo del pequeño logo */
+.small-logo {
+    width: 20px; /* Define el tamaño del pequeño logo */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    object-fit: cover; /* Asegura que el logo cubra el contenedor sin distorsionarse */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa por encima */
+}
+/* Main */
+
+/* Seccion Destacada */
+.destacada {                /* Caja principal de la seccion destacada */
+    width: 100%;            /* Definimos que la seccion esta en el 100% del ancho de la pagina */
+    overflow: hidden;       /* Todo lo que sobre pase las dimensiones de la caja se ocultan */
+    text-align: center;     /* Alineamos el texto al centro */
+}
+
+.imagen-destacada {
+    width: 100%;
+    height: 87vh;
+    overflow: hidden;
+}
+
+.imagen-destacada ul {
+    display: flex;
+    animation: cambio 5s infinite alternate linear;
+    width: 200%;
+}
+
+.imagen-destacada li {
+    width: 100%;
+    list-style: none;
+}
+
+.imagen-destacada img {
+    width: 100%;
+    height: 35%;
+    position: center;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    25% {margin-left: 0;}
+
+    75% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+}
+
+.mensaje-destacada {                    /* Caja del mensaje destacado */
+    height: 87vh;                       /* Definimos que este en el 90% del ajuste vertical de la pagina */
+    font-size: 30px;                    /* Tamaño de letra de 30px */
+    display: flex;                      /* Definimos la caja como flexible */
+    justify-content: center;            /* Ajustamos el contenido al centro horizontal */
+    align-items: center;                /* Ajustamos el contenido al centro vertical */
+    font-family: "Charm", cursive;      /* Defino el tipo de letra "Charm" */
+    background-image: var(--background-img);
+}
+
+.mas-vendidos {                         /* Caja principal de la seccion mas vendidos */
+    height: 87vh;                       /* Definimos que este en el 90% del ajuste vertical de la pagina */
+    overflow: hidden;                   /* Ocultamos todo lo que sobre salga de la caja */
+    display: flex;                      /* Definimos la caja como flexible */
+    align-items: center;                /* Ajustamos el contenido al centro vertical */
+    justify-content: space-between;     /* Ajustamos el contenido al centro horizontal */
+
+    background-color: var(--Blanco-frío);
+    text-align: start;                  /* Ajustamos el texto al centro */
+}
+
+.mas-vendidos-titulo {                  /* caja del titulo de la seccion mas vendidos */
+    padding-left: 20px;                 /* Definimos relleno de 20px en todos los lados */
+    font-size: 25px;                    /* Definimos tamaño de letra de 25px */
+}
+
+.producto {                             /* Caja de los productos */
+    border: none;                       /* Definimos que no tenga bordes */
+    width: 20%;                         /* Ajustamos al 20% de la pantalla */
+    overflow: hidden;                   /* Ocultamos todo lo que sobre salga de la caja */
+    font-weight: bold;                  /* Definimos letra con negrilla */
+    padding: 20px;                      /* Definimos relleno de 20px en todos los lados */
+    text-align: center;
+}
+
+.producto img {                         /* Caja de la imagen de los productos */
+    width: 100%;                        /* Ajustamos al 100% horizontal de la caja */
+    height: 100%;                       /* Ajustamos al 100% vertical de la caja */
+    object-fit: cover;                  /* Recortamos la imagen al tamaño de la caja */
+}
+
+.producto:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {             /* Propiedades para un ancho maximo de 768px */
+    .mensaje-destacada {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mensaje-destacada {
+        font-size: 20px;
+    }
+}
+
+.testimonios {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Blanco-cálido);
+}
+
+.testimonios h2 {
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: 100;
+}
+
+.container-testimonios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonio {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonio p {
+    padding-bottom: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonio h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Seccion Contacto */
+
+.contacto {
+    height: 87vh;
+    width: 90%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin: 0 auto 90px auto;
+    background-color: var(--Blanco-frío);
+}
+
+.contacto h2 {
+    font-size: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.formulario input {
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 20vh;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    width: 80%;
+    background-color: var(--text-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 auto 30px auto;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--Oscuro-gris-carbón);
+}
+
+footer {
+    background-color:var(--Blanco-puro);/* Color oscuro, elegante y sobrio */
+    color:var(--Negro-suave); /* Texto en blanco para alto contraste */
+    padding: 20px 0; /* Espaciado vertical */
+    font-family: 'Arial', sans-serif; /* Tipografía moderna y legible */
+    position: fixed; /* Fija el footer en su posición */
+    bottom: 0; /* Asegura que esté siempre en la parte inferior */
+    left: 0; /* Se alinea al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+}
+
+.footer-container {
+    max-width: 120rem; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en dispositivos pequeños */
+    justify-content: space-between; /* Espacia uniformemente los elementos */
+    align-items: center;
+    padding: 0 2rem; /* Margen interno en los laterales */
+    
+}
+
+/* Logo del Footer */
+.footer-logo-img {
+    width: 140px; /* Tamaño ajustable para un logo proporcional */
+    height: auto;
+    filter: grayscale(100%); /* Estilo monocromático profesional */
+
+}
+
+.footer-logo-img:hover {
+    filter: grayscale(0); /* Recupera los colores al pasar el ratón */
+    cursor: pointer;
+
+}
+
+/* Enlaces del Footer */
+.footer-links {
+    display: flex;
+    gap: 2rem; /* Espaciado uniforme entre enlaces */
+}
+
+.footer-links a {
+    color:var(--Negro-suave);/* Color gris claro para elegancia */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animación de color al interactuar */
+}
+
+.footer-links a:hover {
+    color:var(--Oscuro-gris-carbón);/* Rojo intenso, acorde a una marca de lujo */
+}
+
+/* Información Legal */
+.footer-legal {
+    text-align: center;
+    color: var(--Negro-grisáceo);/* Gris tenue */
+}
+
+.footer-legal a {
+    color:var(--Color-gris-claro);
+    text-decoration: none;
+    font-size: small;
+}
+
+.footer-legal a:hover {
+    color: var(--Color-gris-medio); /* Rojo intenso para destacar */
+}
+
+/* Diseño Adaptable */
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+    }
+    
+    .footer-container {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        text-align: center; /* Alinea todo al centro */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Enlaces en una columna */
+        gap: 1.5rem; /* Reduce el espacio entre ellos */
+    }
+
+    .footer-logo-img {
+        margin-bottom: 1.5rem; /* Espaciado inferior del logo */
+    }
+}
+
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+    }
+
+    .nav ul {
+        flex-direction: column; /* Apila los enlaces del menú verticalmente */
+        gap: 10px; /* Reduce el espacio entre los elementos del menú */
+    }
+
+    .menu-logo {
+        width: 100px; /* Reduce el tamaño del logo en pantallas pequeñas */
+    }
+
+    .small-logo-container {
+        top: 30px; /* Ajusta la posición del pequeño logo */
+        right: 15px; /* Ajusta la distancia del borde derecho */
+    }
+
+    .destacada .imagen-destacada {
+        height: 60vh; /* Reduce la altura de la imagen destacada */
+    }
+
+    .mas-vendidos {
+        flex-direction: column; /* Apila los productos verticalmente */
+        height: auto; /* Ajusta la altura al contenido */
+    }
+
+    .producto {
+        width: 100%; /* Los productos ocupan el 100% del ancho en pantallas pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-bottom: 20px; /* Agrega espacio entre los productos */
+    }
+
+    .producto h2 {
+        font-size: 16px; /* Reduce el tamaño de la fuente */
+    }
+
+    .producto p {
+        font-size: 12px; /* Reduce el tamaño de la fuente */
+    }
+
+    .testimonios {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container-testimonios {
+        flex-direction: column;
+    }
+
+    .testimonio {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .contacto{
+        flex-direction: column;
+        margin: auto ;
+        height: auto;
+    }
+
+    .contacto label {
+        padding: 20px;
+    }
+
+    input[type="submit"] {
+        margin-top: 20px;
+        width: 60%;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño de la fuente global en pantallas pequeñas */
+    }
+
+    .top-bar {
+        font-size: 12px; /* Reduce el tamaño de la fuente de la barra superior */
+    }
+
+    .nav a {
+        font-size: 14px; /* Reduce el tamaño de la fuente de los enlaces */
+        padding: 8px 12px; /* Reduce el relleno de los enlaces */
+    }
+
+    .mas-vendidos-titulo {
+        font-size: 20px; /* Reduce el tamaño del título de la sección */
+    }
+
+    .producto h2 {
+        font-size: 14px; /* Reduce el tamaño de la fuente del título del producto */
+    }
+
+    .producto p {
+        font-size: 12px; /* Reduce el tamaño de la fuente de la descripción */
+    }
+
+    .imagen-producto {
+        width: 80%; /* Reduce el tamaño de las imágenes de los productos */
+    }
+}

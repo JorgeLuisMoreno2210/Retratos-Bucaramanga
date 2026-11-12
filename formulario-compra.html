@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Compra</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="icon" href="icons/icon_shopping_cart_notification.svg">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Compra</h1>
+        <form id="orderForm">
+            <div class="logoretrato">
+                <a href="index.html"><img src="img/retratosnegro.png" alt=""></a>
+            </div>
+            <div class="form-group">
+                <label for="product">Producto</label>
+                <select name="product" id="product" required>
+                    <option selected disabled>Seleccione un producto</option>
+                    <option value="Retratos (10 fotos)">Retratos (10 fotos)</option>
+                    <option value="Retratos (18 fotos)">Retratos (18 fotos)</option>
+                    <option value="Imantadas (Photostrip)">Imantadas (Photostrip)</option>
+                    <option value="Imantadas (Mini Polaroid)">Imantadas (Mini Polaroid)</option>
+                    <option value="Imantadas (Polaroid)">Imantadas (Polaroid)</option>
+                    <option value="Imantadas (Cuadrada)">Imantadas (Cuadrada)</option>
+                    <option value="Retablo (14 x 14)">Retablo (14 x 14)</option>
+                    <option value="Retablo (20 x 20)">Retablo (20 x 20)</option>
+                    <option value="Retablo (20 x 30)">Retablo (20 x 30)</option>
+                    <option value="Retablo (30 x 30)">Retablo (30 x 30)</option>
+                    <option value="Retablo (30 x 45)">Retablo (30 x 45)</option>
+                    <option value="Retablo (49 x 49)">Retablo (49 x 49)</option>
+                    <option value="Acrílicos">Acrílicos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Cantidad</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Ingrese la cantidad" required>
+            </div>
+            <div class="form-group">
+                <label for="value">Valor</label>
+                <input type="text" id="value" name="value" disabled required>
+            </div>
+            <div class="form-group">
+                <label for="deliveryDate">Fecha de Entrega</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+            </div>
+            <div class="form-group">
+                <label for="productImage">Imagen del Producto</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn-submit">Enviar Pedido</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation-message"></div>
+    </div>
+    <script src="js/formulario-compra.js"></script>
+</body>
+</html>

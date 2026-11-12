@@ -1,0 +1,125 @@
+:root {
+    --Claro-gris-muy-suave: #F5F5F5;
+    --Intermedio-gris-medio: #CCCCCC;
+    --Oscuro-gris-carbón: #4F4F4F;
+    --Blanco-puro: #FFFFFF;
+    --Blanco-cálido: #FAFAFA;
+    --Blanco-frío: #F0F0F0;
+    --Negro-puro: #000000;
+    --Negro-suave: #1A1A1A;
+    --Negro-grisáceo: #2C2C2C;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--Blanco-frío);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--Blanco-puro);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--Oscuro-gris-carbón);
+}
+.logoretrato {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+    width: 100%; 
+    height: 80px; 
+    
+}
+
+.logoretrato img {
+    width: 160px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+label, h3 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--Negro-suave);
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="date"], 
+input[type="file"], 
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--Intermedio-gris-medio);
+    border-radius: 5px;
+    background-color: var(--Claro-gris-muy-suave);
+}
+
+textarea {
+    resize: none;
+    scrollbar-width: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--Oscuro-gris-carbón);
+    outline: none;
+}
+
+.btn-submit {
+    background-color: var(--Oscuro-gris-carbón);
+    color: var(--Blanco-puro);
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--Negro-grisáceo);
+}
+
+.confirmation-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--Oscuro-gris-carbón);
+    text-align: center;
+}

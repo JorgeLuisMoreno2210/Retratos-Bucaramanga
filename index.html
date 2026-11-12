@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Retratos</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../retratos-bga/favicon_io/favicon.ico">
+    </head>
+
+    <body>
+        <div class="top-bar">
+            Envíos a todo Colombia. 
+            <img src="img/Regaloa.png" alt="Logo pequeño">
+        </div>
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <img src="img/retratosnegro.png" alt="logo de Retratos" class="menu-logo">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="formulario-producto.html">Productos</a></li>
+                        <li><a href="formulario-cliente.html">Clientes</a></li>
+                        <li><a href="#contacto">Contactanos</a></li>
+                    </ul>
+                </nav>
+                <div class="small-logo-container">
+                    <a href="formulario-compra.html"><img src="img/687259.png" alt="Pequeño logo" class="small-logo"></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="destacada">
+                <div class="imagen-destacada">
+                    <ul>
+                        <li><img src="img/imagen-destacada-1.jpeg" alt="destacada-1"></li>
+                        <li><img src="img/imagen-destacada-2.jpeg" alt="destacada-2"></li>
+                    </ul>
+                </div>
+                <p class="mensaje-destacada">La vida está hecha de pequeños momentos,<br> haz que cuenten !</p>
+            </section>
+
+            <section class="mas-vendidos" id="productos">
+                <div class="mas-vendidos-titulo">
+                    <h2>Los más pedidos</h2>
+                </div>
+                <figure class="producto">
+                    <img src="img/mas-vendido-1.jpeg" alt="imagen de retratos">
+                    <figcaption>Retratos</figcaption>
+                </figure>
+                <figure class="producto">
+                    <img src="img/mas-vendido-2.jpeg" alt="fotos imantadas">
+                    <figcaption>Imantadas</figcaption>
+                </figure>
+                <figure class="producto">
+                    <img src="img/mas-vendido-3.jpeg" alt="retablo de familia">
+                    <figcaption>Retablos</figcaption>
+                </figure>
+                <figure class="producto">
+                    <img src="img/mas-vendido-4.jpeg" alt="acrilicos de bebe">
+                    <figcaption>Acrílicos</figcaption>
+                </figure>
+            </section>
+
+            <section class="testimonios">
+                    <h2>testimonios</h2>
+                    <div class="container-testimonios">
+                        <div class="testimonio">
+                            <p>"Nunca he tenido problemas con mis pedidos. Siempre llegan puntuales, y la calidad de los productos es excelente. Este último pedido fue entregado antes de lo esperado, lo cual me sorprendió gratamente. ¡Sigan así!"</p>
+                            <h3>Jose</h3>
+                        </div>
+                        <div class="testimonio">
+                            <p>"Estoy muy contenta con mi pedido. Todo estaba tal y como lo esperaba. ¡Definitivamente seguiré comprando aquí!"</p>
+                            <h3>Sofia</h3>
+                        </div>
+                        <div class="testimonio">
+                            <p>"Mi novio se emocionó mucho cuando lo abrió, y sin duda repetiré para futuros regalos. muchas gracias por hacernos recordar momentos que no queremos olvidar." </p>
+                            <h3>Camila</h3>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="contacto" id="contacto">
+                <div>
+                    <h2>Contactanos</h2>
+                    <p>Si tinenes alguna PQRS escribenos para ayudarte, nos pondremos en contacto contigo lo antes posible.</p>
+                </div>
+                <form class="formulario" id="orderForm">
+                    <label for="name">nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese un correo electronico" required>
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ingrese su numero de telefono" required>
+                    <label for="pqrs">Mensaje</label>
+                    <textarea name="pqrs" id="pqrs" placeholder="Describe aquí tu petición, queja, reclamo o sugerencia con el mayor detalle posible. Por favor incluye toda la información necesaria para que podamos atender tu solicitud de manera efectiva." required></textarea>
+                    <input type="submit" value="Enviar" >
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="img/retratosnegro.png" alt="Logofooter" class="footer-logo-img">
+                </div>
+                <div class="footer-links">
+                    <a href="formulario-envio.html">Envios</a>
+                    <a href="formulario-venta.html">Registro de Venta</a>
+                    <a href="#contacto">Contactanos</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2024 Retratos. - Todos los derechos reservados.</p>
+                    <p><a href="#politicas">Políticas de Privacidad</a> | <a href="#terminos">Términos y Condiciones</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/formulario-contacto.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Producto</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="icon" href="icons/icon_shopping_cart_notification.svg">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Producto</h1>
+        <form id="orderForm">
+            <div class="logoretrato">
+                <a href="index.html"><img src="img/retratosnegro.png" alt=""></a>
+            </div>
+            <div class="form-group">
+                <label for="product">Producto</label>
+                <input type="text" name="product" id="product" placeholder="Ingrese su producto" required>
+            </div>
+            <div class="form-group">
+                <label for="value">Valor</label>
+                <input type="text" id="value" name="value" placeholder="Ingrese el precio del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripcion</label>
+                <textarea name="description" id="description" rows="4" placeholder="Ingrese la descripcion del producto"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productImage">Imagen del Producto</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn-submit">Registrar Producto</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation-message"></div>
+    </div>
+    <script src="js/formulario-producto.js"></script>
+</body>
+
+</html>

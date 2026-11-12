@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Envios</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="icon" href="icons/icon_shopping_cart_notification.svg">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Envios</h1>
+        <form id="orderForm">
+            <div class="logoretrato">
+                <a href="index.html"><img src="img/retratosnegro.png" alt=""></a>
+            </div>
+            <div class="form-group">
+                <label for="direction">Direccion</label>
+                <input type="text" id="direction" name="direction" placeholder="Ingrese su direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="deliveryDate">Fecha de Entrega</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+            </div>
+            <div class="form-group">
+                <h3>Configura los horarios</h3>
+                <p>Selecciona el horario de inicio y de fin según tus necesidades.</p>
+            </div>
+            <div class="form-group">
+                <label for="time-min">Horario de Inicio</label>
+                <input type="time" name="time-min" id="time-min">
+            </div>
+            <div class="form-group">
+                <label for="time-max">Horario de Fin</label>
+                <input type="time" name="time-max" id="time-max">
+            </div>
+            <button type="submit" class="btn-submit">Solicitar Envio</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation-message"></div>
+    </div>
+    <script src="js/formulario-envio.js"></script>
+</body>
+
+</html>
